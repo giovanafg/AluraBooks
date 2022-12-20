@@ -40,6 +40,7 @@
 }
 
 .lista-menu__titulo, .lista-menu__item{
+    font-family: var(--font-principal);
     padding: 1rem;
     background-color: var(--branco);
 }
