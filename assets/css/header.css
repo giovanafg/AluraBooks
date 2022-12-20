@@ -32,6 +32,9 @@
     left: 0;
 }
 
+.container__botao{
+    display: none;
+}
 .container__botao:checked ~ .lista-menu{
     display: block;
 }
@@ -42,8 +45,6 @@
 }
 
 .lista-menu__titulo{
-    font-family: Poppins;
-    font-size: 16px;
     font-weight: 700;
     color: var(--laranja);
 
@@ -59,3 +60,5 @@
     text-fill-color: transparent;
 
 }
+
+
