@@ -14,6 +14,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 18px 24px;
+    position: relative;
 }
 
 .container{
@@ -21,3 +22,40 @@
     align-items: center;
 }
 
+/*MENU HAMBURGUER*/
+
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 65vw;
+    left: 0;
+}
+
+.container__botao:checked ~ .lista-menu{
+    display: block;
+}
+
+.lista-menu__titulo, .lista-menu__item{
+    padding: 1rem;
+    background-color: var(--branco);
+}
+
+.lista-menu__titulo{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--laranja);
+
+}
+
+.lista-menu__link{
+    text-decoration: none;
+    text-transform: uppercase;
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+}
