@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>AluraBooks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
 
@@ -53,5 +54,45 @@
         <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
         <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
+
+    <!--CARROSSEL-->
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Últimos lançamentos</h2>
+
+        <!--CONTAINER PRINCIPAL DO CARROSSEL-->
+        <div class="swiper">
+
+            <!--BOLINHAS INDICANDO QUE TEM OUTRAS IMAGENS-->
+            <div class="swiper-pagination"></div>
+
+            <!--IMAGENS DO CARROSSEL-->
+            <div class="swiper-wrapper">
+                <!--IMAGENS-->
+                <div class="swiper-slide"><img src="./assets/img/ApacheKafka.png" alt="Livro Apacheka"></div>
+                <div class="swiper-slide"><img src="./assets/img/Liderança.png" alt="Livro de liderança"></div>
+                <div class="swiper-slide"><img src="./assets/img/Javascript.png" alt="Livro de Javascript"></div>
+                <div class="swiper-slide"><img src="./assets/img/Guia Front-end.png" alt="Livro de Front-end"></div>
+                <div class="swiper-slide"><img src="./assets/img/Portugol.png" alt="Livro de lógica de programação"></div>
+            </div>
+
+            <!--BOTÕES PARA PASSAR PARA O LADO DIREITO E ESQUERDO-->
+            <div class="swiper-button-prev"></div>
+             <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <!--LINK DO IMPORT PARA O CARROSSEL-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+
+    });
+      </script>
 </body>
 </html>
