@@ -4,10 +4,12 @@
 @import url("../css/card.css");
 @import url("../css/topicos.css");
 @import url("../css/contato.css");
+@import url("../css/rodape.css");
 
 :root{
     --cor-de-fundo: #EBECEE;
     --branco: #FFFF;
+    --cinza: #F9F9F9;
     --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);;
     --laranja: #EB9B00;
     --azul: #002F52;

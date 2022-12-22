@@ -1,0 +1,9 @@
+.rodape{
+    padding: 1rem;
+    background: var(--branco);
+    margin-top: 2px;
+}
+
+.rodape__titulo{
+    font-weight: 400;
+}
