@@ -55,7 +55,7 @@
         <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
 
-    <!--CARROSSEL-->
+    <!--CARROSSEL ULTIMOS LANÇAMENTOS-->
     <section class="carrossel">
         <h2 class="carrossel__titulo">Últimos lançamentos</h2>
 
@@ -81,12 +81,92 @@
         </div>
     </section>
 
+    <!--CARD LIVRO-->
+    <div class="card">
+        <!--PRIMEIRA LINHA-->
+        <div class="card__descricao">
+            <!--PRIMEIRA COLUNA-->
+            <div class="descricao">
+                <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+                <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+            </div>
+            <!--SEGUNDA COLUNA-->
+            <img src="./assets/img/Angular.png" alt="Angular" class="descricao__imagem">
+        </div>
+        <!--SEGUNDA LINHA-->
+        <div class="card__botoes">
+            <!--PRIMEIRA COLUNA-->
+            <ul class="botoes">
+                <li class="botoes__item"><img src="./assets/img/Favoritos.svg" alt="Favoritar livro"></li>
+                <li class="botoes__item"><img src="./assets/img/Compras.svg" alt="Adicionar ao carrinho de compras"></li>
+            </ul>
+            <!--SEGUNDA COLUNA-->
+            <a href="#" class="botoes__ancora">Saiba mais</a>
+        </div>
+    </div>
+
+     <!--CARROSSEL MAIS VENDIDOS-->
+     <section class="carrossel">
+        <h2 class="carrossel__titulo">Mais vendidos</h2>
+
+        <!--CONTAINER PRINCIPAL DO CARROSSEL-->
+        <div class="swiper">
+
+            <!--BOLINHAS INDICANDO QUE TEM OUTRAS IMAGENS-->
+            <div class="swiper-pagination"></div>
+
+            <!--IMAGENS DO CARROSSEL-->
+            <div class="swiper-wrapper">
+                <!--IMAGENS-->
+                <div class="swiper-slide"><img src="./assets/img/ApacheKafka.png" alt="Livro Apacheka"></div>
+                <div class="swiper-slide"><img src="./assets/img/Liderança.png" alt="Livro de liderança"></div>
+                <div class="swiper-slide"><img src="./assets/img/Javascript.png" alt="Livro de Javascript"></div>
+                <div class="swiper-slide"><img src="./assets/img/Guia Front-end.png" alt="Livro de Front-end"></div>
+                <div class="swiper-slide"><img src="./assets/img/Portugol.png" alt="Livro de lógica de programação"></div>
+            </div>
+
+            <!--BOTÕES PARA PASSAR PARA O LADO DIREITO E ESQUERDO-->
+            <div class="swiper-button-prev"></div>
+             <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <!--CARD AUTORA DO MÊS-->
+    <div class="card">
+        <!--PRIMEIRA LINHA-->
+        <div class="card__descricao">
+            <!--PRIMEIRA COLUNA-->
+            <div class="descricao">
+                <img src="./assets/img/Estrelinhas.png" alt="" class="descricao__estrelinhas">
+                <h3 class="descricao__titulo">Autora do Mês</h3>
+                <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
+                <p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+            </div>
+            <!--SEGUNDA COLUNA-->
+            <img src="./assets/img/Perfil-escritora 1-1.png" alt="Angular" class="descricao__imagem--autor">
+        </div>
+        <!--SEGUNDA LINHA-->
+        <div class="card__botoes">
+            <!--PRIMEIRA COLUNA-->
+            <ul class="botoes">
+                <li class="botoes__item"><img src="./assets/img/Favoritos.svg" alt="Favoritar livro"></li>
+                <li class="botoes__item"><img src="./assets/img/Compras.svg" alt="Adicionar ao carrinho de compras"></li>
+            </ul>
+            <!--SEGUNDA COLUNA-->
+            <a href="#" class="botoes__ancora">Saiba mais</a>
+        </div>
+    </div>
+
+
+
+
     <!--LINK DO IMPORT PARA O CARROSSEL-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
         spaceBetween: 10,
-        slidesPerView: 4,
+        slidesPerView: 2.5,
         pagination: {
             el: '.swiper-pagination',
             type: 'bullets',
