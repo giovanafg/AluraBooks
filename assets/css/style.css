@@ -1,12 +1,15 @@
 @import url("../css/header.css");
 @import url("../css/banner.css");
 @import url("../css/carrossel.css");
+@import url("../css/card.css");
 
 :root{
     --cor-de-fundo: #EBECEE;
     --branco: #FFFF;
     --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);;
     --laranja: #EB9B00;
+    --azul: #002F52;
+    --preto-opacidade: #000000D9;
     --font-principal: "Poppins";
 }
 
