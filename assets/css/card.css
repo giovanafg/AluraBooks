@@ -67,3 +67,33 @@
     width: 91px;
     height: 15px;
 }
+
+
+@media screen and (min-width: 1024px) {
+    .card{
+        width: 50%;
+        margin: 65px auto 48px;
+    }
+}
+
+@media screen and (min-width: 1728px){
+    
+  
+    .descricao__titulo {
+        font-size: 32px;
+    }
+
+    .descricao__texto {
+        font-size: 16px;
+    }
+
+    .descricao {
+        margin-right: 2em;
+    }
+
+    .card {
+        width: 60%;
+        margin-left: 3em;
+    }
+
+}
